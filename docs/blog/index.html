@@ -1,0 +1,65 @@
+---
+layout: page
+title: Muktakosh Blog
+subtitle: Announcements and information from the Muktakosh project.
+---
+
+<div class="paginated paginated-page paginated-page-{{ paginator.page }}">
+
+    {% if paginator.posts == nil %}
+
+        <div class="callout large lead text-center">
+            <p>No blog posts have been published yet.<p>
+            <p>We may have an update for you soon.</p>
+        </div>
+
+    {% else %}
+
+        {% if paginator.page > 1 %}
+        <h1 class="page-heading">Posts <small>Page {{ paginator.page }}</small></h1>
+        {% else %}
+        <h1 class="page-heading hidden">Posts</h1>
+        {% endif %}
+
+        <div class="post-list">
+            {% for post in paginator.posts %}
+            <div class="card">
+                <div class="card-divider post-info">
+                    <h2 class="post-info-title">
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+                </div>
+
+                {% if post.tags.size > 0 %}
+                <div class="card-section meta">
+                    <span class="post-meta tags">Tags: {{ post | tags }}</span>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="pagination-links text-center">
+            <ul class="pagination" role="navigation" aria-label="Pagination">
+            {% if paginator.previous_page %}
+                <li class="pagination-previous">
+                    <a href="{{ paginator.previous_page_path }}">Previous <span class="show-for-sr">page</span></a>
+                </li>
+            {% else %}
+                <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+            {% endif %}
+
+            {% if paginator.next_page %}
+                <li class="pagination-next">
+                    <a href="{{ paginator.next_page_path }}" aria-label="Next page">Next <span class="show-for-sr">page</span></a>
+                </li>
+            {% else %}
+                <li class="pagination-next disabled">Next <span class="show-for-sr">page</span></li>
+            {% endif %}
+            </ul>
+        </div>
+
+    {% endif %}
+
+</div>

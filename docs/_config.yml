@@ -1,0 +1,50 @@
+title: Muktakosh
+description: Researching and building exponential technologies in an open and sustainable manner
+baseurl: ""
+url: "https://muktakosh.org"
+timezone: Asia/Kolkata
+lang: en-GB
+
+contact:
+  - twitter: muktakosh
+  - facebook: muktakosh
+  - github: muktakosh
+  - email: info@muktakosh.org
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: blog
+    type: pages
+  values:
+    sectionid: blog
+
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+permalink: "blog/:slug"
+paginate: 5
+paginate_path: "/blog/page/:num"
+
+layouts_dir: _theme/_layouts
+data_dir: _theme/_data
+includes_dir: _theme/_includes
+
+sass:
+  style: compressed
+  sass_dir: _theme/_sass

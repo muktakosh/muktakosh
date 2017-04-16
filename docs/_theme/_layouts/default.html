@@ -1,0 +1,22 @@
+---
+# Default layout file
+---
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body>
+
+    {% include body-start.html %}
+
+    <div class="content-wrapper">
+        {{ content }}
+    </div>
+
+    {% include body-end.html %}
+
+</body>
+
+</html>

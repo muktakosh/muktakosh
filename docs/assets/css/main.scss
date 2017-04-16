@@ -1,0 +1,41 @@
+---
+# Main SCSS file
+---
+
+@charset 'utf-8';
+
+@import 'app';
+
+.color-gray {
+    color: $medium-gray;
+}
+
+.page-header {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.lead {
+
+    .button.large {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.page-title {
+
+    &.large {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+}
+
+.post {
+
+    .meta {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

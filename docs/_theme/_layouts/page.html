@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article>
+    <div class="row column page-header">
+        <div class="callout text-center lead">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% if page.subtitle %}
+                <p class="subheader">{{ page.subtitle }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="page-content row column">
+        {{ content }}
+    </div>
+
+</article>
