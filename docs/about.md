@@ -1,7 +1,7 @@
 ---
 title: About Muktakosh
 subtitle: Do you feel a never-ending wiggle inside your brain for creating something new? Something radical? Then, welcome!
-permalink: /about
+permalink: /about/
 ---
 
 We are group of technologists, designers, creative minds, thinkers and dreamers. We created [Muktakosh](https://muktakosh.org) as a platform for creative minds to come together, discuss and innovate. We plan and build solutions focused on the future, with an aim to solve real problems or identify problems before their time.
