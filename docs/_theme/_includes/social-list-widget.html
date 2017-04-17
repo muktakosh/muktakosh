@@ -15,7 +15,7 @@
     <a href="{{ '/blog' | relative_url }}" class="link-icon" title="Blog">
         <i class="fa fa-rss-square" aria-hidden="true"></i> <span class="show-for-sr">Blog</span>
     </a>
-    {% if include.join == nill %}
+    {% if include.join == nil %}
     <a href="https://github.com/muktakosh/muktakosh" class="link-icon" title="Join the Community">
         <i class="fa fa-comments" aria-hidden="true"></i> <span class="show-for-sr">Join the Community</span>
     </a>
@@ -23,7 +23,7 @@
     <p>IRC: <code>#muktakosh</code> on Freenode</p>
     {% if include.join %}
         <p>
-            <a href="https://github.com/muktakosh/muktakosh" class="button large hollow secondary">
+            <a href="https://github.com/muktakosh/muktakosh" class="button large hollow">
                 <i class="fa fa-heart" aria-hidden="true"></i> Join the community
             </a>
         </p>

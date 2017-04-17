@@ -8,10 +8,12 @@ readmore:
 ---
 
 <div class="row">
+    {% if site.posts.size > 0 %}
     <div class="column small-12 large-6">
         {% include blog-list-widget.html title='Updates' %}
     </div>
-    <div class="column small-12 large-6">
+    {% endif %}
+    <div class="column">
         {% include social-list-widget.html title='Get in touch' %}
     </div>
 </div>

@@ -15,7 +15,19 @@
     padding-bottom: 1.5rem;
 }
 
-.lead {
+.lead-header {
+    background-color: $dark-gray;
+    color: $white;
+    margin-bottom: 1.5rem;
+
+    .callout {
+        background-color: $dark-gray;
+        color: $white;
+
+        .subheader {
+            color: $medium-gray;
+        }
+    }
 
     .button.large {
         margin-top: 1.5rem;
@@ -25,6 +37,22 @@
             margin-left: 0.25rem;
             margin-right: 0.25rem;
         }
+    }
+}
+
+.top-bar {
+    color: $light-gray;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $light-gray;
+        }
+    }
+
+    .top-bar-title {
+        font-weight: bold;
     }
 }
 
@@ -58,10 +86,11 @@
     }
 
     .link-icon {
-        color: $dark-gray;
+        color: $primary-color;
+        transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: $black;
+            color: $secondary-color;
         }
     }
 

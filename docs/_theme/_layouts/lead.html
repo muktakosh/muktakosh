@@ -10,17 +10,19 @@
 
     <div class="content-wrapper">
 
-        <div class="row column page-header lead collapse">
-            <div class="callout text-center lead">
-                <h1 class="page-title large">{{ page.title }}</h1>
-                {% if page.subtitle %}
-                    <p class="subheader">{{ page.subtitle }}</p>
-                {% endif %}
-                {% if page.readmore %}
-                    <a href="{{ page.readmore.url | relative_url }}" class="button large">
-                        <i class="fa {{ page.readmore.icon | default: 'fa-info-circle' }}" aria-hidden="true"></i> {{ page.readmore.title | default: 'Read more' }}
-                    </a>
-                {% endif %}
+        <div class="lead-header">
+            <div class="row column page-header lead collapse">
+                <div class="callout text-center lead">
+                    <h1 class="page-title large">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                        <p class="subheader">{{ page.subtitle }}</p>
+                    {% endif %}
+                    {% if page.readmore %}
+                        <a href="{{ page.readmore.url | relative_url }}" class="button large">
+                            <i class="fa {{ page.readmore.icon | default: 'fa-info-circle' }}" aria-hidden="true"></i> {{ page.readmore.title | default: 'Read more' }}
+                        </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
 
