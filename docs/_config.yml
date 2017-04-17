@@ -32,10 +32,12 @@ defaults:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - bower.json
 
 permalink: "blog/:slug"
 paginate: 5
@@ -44,7 +46,10 @@ paginate_path: "/blog/page/:num"
 layouts_dir: _theme/_layouts
 data_dir: _theme/_data
 includes_dir: _theme/_includes
+plugins_dir: _theme/_plugins
 
 sass:
   style: compressed
-  sass_dir: _theme/_sass
+  load_paths:
+    - _theme/_sass
+    - _theme/_vendors/foundation-sites/scss

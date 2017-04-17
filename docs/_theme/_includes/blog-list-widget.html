@@ -1,0 +1,20 @@
+{% if site.posts.size > 0 %}
+<div class="row widget vertical align-top">
+    <div class="column small-12">
+        <h2>{{ include.title | default: 'From the blog' }}</h2>
+        {% for post in site.posts limit:2 %}
+            <div class="row">
+                <div class="column small-4">
+                    <p class="post-meta">{{ post.date | date: "%b %d, %Y" }}</p>
+                </div>
+                <div class="column">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="column small-12 medium-4">
+        <a href="{{ '/blog' | relative_url }}" class="button hollow secondary expanded">Read the blog&hellip;</a>
+    </div>
+</div>
+{% endif %}

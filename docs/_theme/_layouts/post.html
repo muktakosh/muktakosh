@@ -43,6 +43,17 @@ layout: default
         </div>
         {% endif %}
     </div>
+    <div class="row column">
+        <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="{{ '/' | absolute_url }}">Muktakosh</a></li>
+            <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+            <li>
+            <span class="show-for-sr">Current: </span> {{ page.title }}
+            </li>
+        </ul>
+        </nav>
+    </div>
 </div>
 
 

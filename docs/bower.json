@@ -1,0 +1,21 @@
+{
+  "name": "muktakosh",
+  "homepage": "https://muktakosh.org",
+  "authors": [
+    "Muktakosh"
+  ],
+  "description": "Muktakosh website",
+  "main": "",
+  "license": "CC-BY-4.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}

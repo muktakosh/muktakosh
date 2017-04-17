@@ -1,0 +1,6 @@
+{
+    "directory": "_theme/_vendors",
+    "scripts": {
+        "postinstall": "node _theme/_maintenance/bower-postinstall.js %"
+    }
+}

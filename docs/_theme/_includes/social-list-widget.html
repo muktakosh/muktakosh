@@ -1,0 +1,31 @@
+<div class="row column small-8 small-offset-2 widget social lead align-middle text-center">
+    {% if include.title %}
+        <h2>{{ include.title }}</h2>
+    {% endif %}
+
+    <a href="https://github.com/muktakosh" class="link-icon" title="Github">
+        <i class="fa fa-github-square" aria-hidden="true"></i> <span class="show-for-sr">Github</span>
+    </a>
+    <a href="https://twitter.com/muktakosh" class="link-icon" title="Twitter">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i> <span class="show-for-sr">Twitter</span>
+    </a>
+    <a href="https://facebook.com/muktakosh" class="link-icon" title="Facebook">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i> <span class="show-for-sr">Facebook</span>
+    </a>
+    <a href="{{ '/blog' | relative_url }}" class="link-icon" title="Blog">
+        <i class="fa fa-rss-square" aria-hidden="true"></i> <span class="show-for-sr">Blog</span>
+    </a>
+    {% if include.join == nill %}
+    <a href="https://github.com/muktakosh/muktakosh" class="link-icon" title="Join the Community">
+        <i class="fa fa-comments" aria-hidden="true"></i> <span class="show-for-sr">Join the Community</span>
+    </a>
+    {% endif %}
+    <p>IRC: <code>#muktakosh</code> on Freenode</p>
+    {% if include.join %}
+        <p>
+            <a href="https://github.com/muktakosh/muktakosh" class="button large hollow secondary">
+                <i class="fa fa-heart" aria-hidden="true"></i> Join the community
+            </a>
+        </p>
+    {% endif %}
+</div>
